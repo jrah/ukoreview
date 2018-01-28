@@ -1,46 +1,14 @@
-<footer class="site-footer">
+<footer class="bg-light-gray pv4">
+  <div class="flex-ns justify-between-ns items-center-ns">
+    <span class="tc db pv3 mh6-l">&copy; UKoreview</span>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
-
+    <ul class="pa0 ma0 list tc pv3 mh6-l">
+      {% for page in .site.partials %}
+      {% capture id_title %}{{ page.title | remove:'/' | remove:' ' | downcase }}{% endcapture %}
+      {% if page.type == "modular" %}
+      <li class="dib mh3"><a href="#{{id_title}}" class="ttu dark-gray no-underline">{{page.title}}</a></li>
+      {% endif %}
+   {% endfor %}
+    </ul>
+</div>
 </footer>
