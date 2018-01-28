@@ -16,7 +16,5 @@ You can find the source code for Jekyll at GitHub:
 
 <p class="blue">Blue colour</p>
 
-{% include text-splash.html %}
-
 
 [jekyll-organization]: https://github.com/jekyll
