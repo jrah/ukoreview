@@ -1,0 +1,25 @@
+// init
+@import "init";
+
+// partials
+// @import "partial/index";
+
+
+
+.bg-primary  { background-color: $primary }
+.primary  { color: $primary }
+
+
+.hide {
+  display: none;
+}
+
+.overlay {
+  background-color: rgba($grey-lightest, .9);
+}
+
+
+body {
+  color: $grey-darker;
+  font-family: 'Didact Gothic', serif;
+}
