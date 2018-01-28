@@ -1,20 +1,90 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body class="sans-serif">
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+  <main aria-label="Content">
+
+    <header class="cover vh-75 flex items-center bg-center" style="background-image: url('assets/images/saulo-mohana-78181.jpg')">
+      <div class="mh6 white mw6">
+        <h1 class="lh-title fw4 f2-ns ma0 mb4">CV랑 Cover Letter 어떻게 써야할지 막막하시죠?</h1>
+        <p class="lh-copy fw8 f2-ns ma0">도와드리겠습니다!</p>
       </div>
-    </main>
+    </header>
 
-    {% include footer.html %}
+    <div id="about">
+      <div class="mh6-l mh4 mv5">
+        <div class="center">
+          <h2 class="ttu tc f2 ma0">About</h2>
+          <div class="tc">
+            <p class="blue lh-copy">커리어 개발을 위한 컨설팅을 시작합니다.</p>
+            <p class="lh-copy">영국에서 취업하기는 정말 하늘의 별 따기입니다. 이래저래 요구하는 서류도 많고, 어렵습니다. 한국과는 다른 표현 방식과 확고한 전략이 필요합니다.</p>
+            <p class="lh-copy">유코리뷰는 영국 내의 전문가들의 조직적 역량과 노하우를 담아 고객의 커리어 전략을 짜고 피드백을 해드립니다.?</p>
+          </div>
+        </div>
+      </div>
 
-  </body>
+    </div>
+
+    <div id="whatwedo">
+
+      <div class="mh6-l mv5">
+        <div class="center">
+          <h2 class="ttu tc f2 ma0">What We Do</h2>
+          <div class="flex flex-column">
+
+            <div class="flex flex-row-ns items-center flex-row-reverse-ns flex-column ma3-ns">
+              <div class="text pa4 w-50-ns">
+                <h3 class="blue">General Consultation Session</h3>
+                <p>이메일, 구글닥스, 스카이프 세션을 통해 여러분의 커리어 전략을 업그레이드 해드립니다.</p>
+                <p>비자 문제부터 CV와 Cover Letter 작성 전략까지, 커리어와 관련된 모든 질문들을 대답해드립니다.</p>
+                <p>또한 모의 면접들 및 예상 대답까지 같이 고민하고 원하는 직장, 원하는 업계에 취업을 하실 수 있도록 끝까지 같이 고민하고 돕겠습니다.</p>
+              </div>
+              <div class="image w-50-ns">
+                <img src="/assets/images/helloquence-61189.jpg" alt="Man working at computer">
+              </div>
+            </div>
+
+
+            <div class="flex flex-row items-center ma3">
+              <div class="text pa4 w-50">
+                <h3 class="blue">Professional Consultation Session</h3>
+                <p>각 분야에서 현재 종사하고있는 전문가들이 여러분의 커리어 전략을 업그레이드 해드립니다.</p>
+                <p>어디에 물어볼 수 없었던 분야에 관련된 깊은 질문들이나 궁금증들을 이메일, 구글닥스, 스카이프 세션을 통해 해소시켜드립니다.</p>
+                <p>또한 현재 업계 현황부터 업계에서 뜨거운 이야기들까지 조언해드려 고객님의 업계 관련 지식을 늘려드립니다.</p>
+              </div>
+              <div class="image w-50">
+                <img src="assets/images/rawpixel-com-351765.jpg" alt="Agreement between two people">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="contact">
+      <div class="cover vh-75 flex items-center bg-center" style="background-image: url('assets/images/helloquence-51716.jpg')">
+        <div class="mh6-ns white">
+          <h2 class="f2">아래 이메일로 연락주세요!</h2>
+          <a href="mailto:ukoreview@gmail.com" class="no-underline white f2">ukoreview@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  {% include footer.html %}
+
+</body>
 
 </html>
