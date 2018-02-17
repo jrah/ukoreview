@@ -1,6 +1,7 @@
 ---
 layout: modular
 title: About
+order: 3
 type: modular
 ---
 

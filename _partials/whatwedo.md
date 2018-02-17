@@ -1,6 +1,7 @@
 ---
 layout: modular
 title: What We Do
+order: 0
 type: modular
 ---
 

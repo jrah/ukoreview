@@ -1,6 +1,7 @@
 ---
 layout: modular
 title: Contact
+order: 1
 type: modular
 ---
 
