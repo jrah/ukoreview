@@ -6,7 +6,8 @@
 
 
   <ul class="pa0 ma0 list w-100 w-auto-ns tc mv3 mh6-ns">
-    {% for page in .site.partials %}
+    {% assign pages = site.partials | sort: 'order' %}
+    {% for page in pages %}
     {% capture id_title %}{{ page.title | remove:'/' | remove:' ' | downcase }}{% endcapture %}
     {% if page.type == "modular" %}
     <li class="dib mh3"><a href="#{{id_title}}" class="ttu dark-gray no-underline">{{page.title}}</a></li>
